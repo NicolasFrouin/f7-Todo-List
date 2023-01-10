@@ -1,0 +1,52 @@
+<template>
+	<div class="page" data-name="type-detail">
+		<div class="navbar">
+			<div class="navbar-bg"></div>
+			<div class="navbar-inner sliding">
+				<div class="left">
+					<a href="#" class="link back">
+						<i class="icon icon-back"></i>
+						<span class="if-not-md">Retour</span>
+					</a>
+				</div>
+				<div class="title">Détail de la liste n°${$f7route.params.idList}</div>
+				<div class="right">
+					<a href="#" class="link trash">
+						<i class="icon icon-trash"></i>
+						<span class="if-not-md">Supprimer</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div id="taskList">
+				<div class="block-title">Liste des tâches</div>
+				<div class="list links-list">
+					<ul>
+						<li><a href="/task/detail/1">Tâche 1</a></li>
+						<li><a href="/task/detail/2">Tâche 2</a></li>
+						<li><a href="/task/detail/3">Tâche 3</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="block block-strong">
+				<a href="/task/create/">
+					<button class="col button button-fill" id="btnUpdate">Ajouter tâche</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</template>
+<script>
+	export default (props, { $, $on, $f7 }) => {
+		$on("pageInit", () => {
+			$("#taskList").append("");
+			$("#btnUpdate").click(() => {
+				console.log(props, { $, $on, $f7 });
+				// $f7.router.navigate("/task/create/");
+				// window.location = "/task/create/"
+			});
+		})
+		return $render;
+	};
+</script>

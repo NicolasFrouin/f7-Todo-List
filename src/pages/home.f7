@@ -40,51 +40,6 @@
         <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using
           "data-view" attribute on links.</p>
       </div>
-      <div class="block-title">Navigation</div>
-      <div class="list">
-        <ul>
-          <li>
-            <a href="/about/" class="item-content item-link">
-              <div class="item-inner">
-                <div class="item-title">About</div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/form/" class="item-content item-link">
-              <div class="item-inner">
-                <div class="item-title">Form</div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="block-title">Modals</div>
-      <div class="block block-strong">
-        <div class="row">
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
-          </div>
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill login-screen-open"
-              data-login-screen="#my-login-screen">Login Screen</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="block-title">Panels</div>
-      <div class="block block-strong">
-        <div class="row">
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill panel-open" data-panel="left">Left Panel</a>
-          </div>
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
-          </div>
-        </div>
-      </div>
-
       <div class="list links-list">
         <ul>
           <li>
